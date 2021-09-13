@@ -14,9 +14,8 @@ import Header from '../components/Header';
                 <Header />
             <Switch>
                 <Route path="/" component={ExpenseDashBoardPage} exact={true}/>
-                <Route path="/create" component={AddExpense} />
-                <Route path='/:id' component={EditExpensePage} />
-                <Route path="/help" component={HelpPage} />
+                <Route path="/create" component={AddExpense} />                
+                <Route path='/:id' component={EditExpensePage} />               
                 <Route component={NotFound} />
             </Switch>   
             </div> 
