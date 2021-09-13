@@ -6,7 +6,6 @@ import {NavLink} from 'react-router-dom';
                 <NavLink to="/" activeClassName="is-active">DashBoard</NavLink>
                 <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
               
-                <NavLink to="/help" activeClassName="is-active">Help</NavLink>
             </header>
         )
 
