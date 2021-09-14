@@ -28,7 +28,7 @@ const mapstatetoProps = (state) =>{
     const visibleExpenses = selectExpenses(state.expenses,state.filters);
     return {
         expenseCount:visibleExpenses.length,
-        expensesTotal : selectExpensesTotal(state.expenses)
+        expensesTotal : selectExpensesTotal(visibleExpenses)
     }
 };
 

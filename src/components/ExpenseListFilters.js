@@ -7,7 +7,7 @@ const ExpenseListFilters = (props)=>(
     <div className="content-container">
         <div className="input-group">
                 <div className="input-group__item">
-                        <input type="text" defaultValue={props.filters.text} onChange={(e)=>{
+                        <input placeholder="Enter Search Text Filter" type="text" defaultValue={props.filters.text} onChange={(e)=>{
                             props.dispatch(setTextFilter(e.target.value))                            
                         }}/>
                 </div>

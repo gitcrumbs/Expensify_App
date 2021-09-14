@@ -140,6 +140,7 @@ text-decoration: none;
       border: 1px solid darken(#f7f7f7);
       color:#666;
       display:flex;
+      align-items: right;
       justify-content: space-between;
       padding: 1.2rem 1.6rem;
   }
@@ -147,6 +148,7 @@ text-decoration: none;
   .list-item{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
     color:#666;
     border: 1px solid #f7f7f7 ;       
     text-decoration: none;
@@ -154,22 +156,23 @@ text-decoration: none;
 
   }
 
-  .list-item :hover .tooltiptext{
+  .list-item :hover {
     background:#f7f7f7;
-    visibility: visible;
-   }
-
-   .list-item >div :nth-child(2) {
-    padding-right: 1 rem;
-  }
-
+   
+   }  
+ 
  .description_content{
-     padding-left: 1.3rem;
+     padding-left: 1.3rem;   
+ }
+
+ .description_amount{
+    padding-right: 1rem;
  }
  
   .list-item-contents {      
-    display:flex;
-    justify-content: space-between;    
+    display:flex;    
+    justify-content: space-between;  
+    align-items: center;  
   }
 
   

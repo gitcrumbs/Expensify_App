@@ -14,14 +14,14 @@ const ExpenseListItem = ({id,description,amount,createdAt,note})=>(
                 <div className="description_content"><b>{description}</b>
                     <br/>
                     <br/>
-                    <span> <b>{moment(createdAt).format('MMMM Do, YYYY')}</b></span>
+                                        
+                    <div><b>Comments  :</b> {note}</div>       
+                    <span><b> Created on:</b> {moment(createdAt).format('MMMM Do, YYYY')}</span>
                 </div>            
-              
-                <div><b>{numeral(amount).format('$0,0.00')}</b>
-                <br/>
-                <br/>
-                <p> {note}</p>
-                </div>
+                
+                <div className="description_amount"><b>{numeral(amount).format('$0,0.00')}</b></div>
+                
+                
                
                 
             </div>      

@@ -11,7 +11,7 @@ const ExpenseList = (props) =>(
 
         <div className="list-header">
        
-            <div classsName="show-for-desktop"><b>Expense</b></div>        
+            <div classsName="show-for-desktop"><b>Expense</b></div> 
             <div classsName="show-for-desktop"><b>Amount</b></div>
         </div>           
             {props.text}
