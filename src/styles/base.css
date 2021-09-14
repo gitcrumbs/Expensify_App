@@ -21,6 +21,29 @@ button:disabled{
 }
 
 
+.button{
+    cursor: pointer;
+    background: #1c88bf;
+    display: inline-block;
+    color: white;
+    display: inline-block;
+    font-size: smaller;
+    font-weight: 300;
+    line-height: 1;
+    padding: 8px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.button:hover{
+     color: white;
+}
+
+
+.button:disabled{
+    cursor: default;
+}
+
 .is-active{
     font-weight: bold;
 }
@@ -96,11 +119,57 @@ text-decoration: none;
 
 
   .input-group{
+    margin-bottom: 1.2rem;
       display: flex;
-      margin-bottom: 3.2rem;
-    
+      margin-bottom: 3.2rem;      
+     flex-direction: row;
+     
+
   }
 
   .input-group__item{
     margin-right: 1.2rem;
   }
+
+  .page-header__actions{
+      margin-top:1.6rem
+  }
+
+  .list-header{
+      background: #f7f7f7;
+      border: 1px solid darken(#f7f7f7);
+      color:#666;
+      display:flex;
+      justify-content: space-between;
+      padding: 1.2rem 1.6rem;
+  }
+
+  .list-item{
+    display: flex;
+    flex-direction: column;
+    color:#666;
+    border: 1px solid #f7f7f7 ;       
+    text-decoration: none;
+    transition: background .3s ease;
+
+  }
+
+  .list-item :hover .tooltiptext{
+    background:#f7f7f7;
+    visibility: visible;
+   }
+
+   .list-item >div :nth-child(2) {
+    padding-right: 1.3rem;
+  }
+
+ .description_content{
+     padding-left: 1.3rem;
+ }
+ 
+  .list-item-contents {      
+    display:flex;
+    justify-content: space-between;    
+  }
+
+  

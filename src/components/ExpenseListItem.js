@@ -6,19 +6,30 @@ import numeral from 'numeral'
 
 const ExpenseListItem = ({id,description,amount,createdAt,note})=>(
 
-    <div>
+    
 
-        <Link className="expense_link" to={`/${id}`}>
-            <h3>{description}</h3>            
+        <Link className="list-item" to={`/${id}`}>
+
+            <div className="list-item-contents">
+                <div className="description_content"><b>{description}</b>
+                    <br/>
+                    <br/>
+                    <span> <b>{moment(createdAt).format('MMMM Do, YYYY')}</b></span>
+                </div>            
+              
+                <div><b>{numeral(amount).format('$0,0.00')}</b>
+                <br/>
+                <br/>
+                <p> {note}</p>
+                </div>
+               
+                
+            </div>      
+                     
         </Link>
-        <div className="card"> 
-            
-                <p><b> Details :</b>{numeral(amount).format('$0,0.00')} - {moment(createdAt).format('MMMM Do, YYYY')}</p>
-                <p><b>Summary :</b>{note}</p>
-                  
-        </div>
+       
         
-    </div>
+    
 )
 
 export default ExpenseListItem;
