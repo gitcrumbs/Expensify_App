@@ -13,7 +13,9 @@ const ExpenseList = (props) =>(
             <br/>
             {props.expenses.map((expense)=>{
                 return(
-                    <ExpenseListItem key={expense.id} {...expense} />
+                    <ExpenseListItem key={expense.id} {...expense}>
+                        <p>props.note</p>
+                    </ExpenseListItem>
                 )
             })}
         

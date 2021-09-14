@@ -9,9 +9,12 @@ export const ExpenseSummary=({expenseCount,expensesTotal})=>{
     const expenseWord = expenseCount===1 ? 'expense':'expenses'
     const formattedExpensesTotal = numeral(expensesTotal).format('$0,0.00')
     return(
-        <div>
-            <h1>Viewing {expenseCount} {expenseWord} totalling to {formattedExpensesTotal}</h1>
-        </div>
+        <div className="page-header">
+
+            <div className="content-container">
+                <h1 className="page-header__title">Viewing <span>{expenseCount}</span> {expenseWord} totalling to <span>{formattedExpensesTotal}</span></h1>
+            </div>
+       </div>
     )
 }
 
